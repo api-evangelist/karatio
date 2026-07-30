@@ -1,8 +1,25 @@
 aid: karatio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/karatio.png
 name: Karat.io
-description: 'Karat.io is a company surfaced as a portfolio company of ggv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: hr-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Karat (trykarat.com) is a fintech platform providing integrated business banking and
+  financial tools built for entrepreneurs, content creators, agencies, and small businesses managing
+  irregular income. Its product suite spans FDIC-insured business checking accounts with high APY,
+  the Karat Card and Karat Max charge/credit cards with rewards and no annual fees, mass and
+  international contractor payments, AI-powered bookkeeping with automatic transaction categorization,
+  invoicing, and multi-entity team management. Surfaced as a portfolio company of ggv-capital and
+  added to the API Evangelist network for enrichment; as of this pass Karat publishes a consumer web
+  and mobile app but no public developer program, API documentation, or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/karatio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Hr Tech
+- Fintech
+- Business Banking
+- Payments
+- Bookkeeping
+- Creator Economy
+- Small Business
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.trykarat.com/
+- type: Support
+  url: https://help.trykarat.com
+- type: SignUp
+  url: https://app.trykarat.com/signup
+- type: Login
+  url: https://app.trykarat.com/signin
+- type: TermsOfService
+  url: https://www.trykarat.com/legal
+- type: PrivacyPolicy
+  url: https://www.trykarat.com/legal
+- type: DomainSecurity
+  url: security/karatio-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
